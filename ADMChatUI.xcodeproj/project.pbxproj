@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E5BFAA7D8CFCE2A60324623 /* Pods_ADMChatUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E74E3C1763E805BC0B8857E /* Pods_ADMChatUI.framework */; };
+		8B7925BD26CB449400C57DAA /* NSDateFormatter+ADMChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79255626CB449400C57DAA /* NSDateFormatter+ADMChat.m */; };
+		8B7925BE26CB449400C57DAA /* UIView+ADMChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79255826CB449400C57DAA /* UIView+ADMChat.m */; };
+		8B7925BF26CB449400C57DAA /* ADMChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79255B26CB449400C57DAA /* ADMChatViewController.m */; };
+		8B7925C026CB449400C57DAA /* ADMChatSqliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79256126CB449400C57DAA /* ADMChatSqliteManager.m */; };
+		8B7925C126CB449400C57DAA /* ADMChatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79256226CB449400C57DAA /* ADMChatHelper.m */; };
+		8B7925C226CB449400C57DAA /* ADMChatMessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79256326CB449400C57DAA /* ADMChatMessageManager.m */; };
+		8B7925C326CB449400C57DAA /* ADMChatNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79256526CB449400C57DAA /* ADMChatNotificationManager.m */; };
+		8B7925C426CB449400C57DAA /* ADMChatDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79256626CB449400C57DAA /* ADMChatDBManager.m */; };
+		8B7925C526CB449400C57DAA /* ADMChatMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79256A26CB449400C57DAA /* ADMChatMessageModel.m */; };
+		8B7925C626CB449400C57DAA /* ADMChatGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79256D26CB449400C57DAA /* ADMChatGroupModel.m */; };
+		8B7925C726CB449400C57DAA /* ADMChatUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79256E26CB449400C57DAA /* ADMChatUserModel.m */; };
+		8B7925C826CB449400C57DAA /* ADMChatSessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79256F26CB449400C57DAA /* ADMChatSessionModel.m */; };
+		8B7925C926CB449400C57DAA /* ADMChatBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79257426CB449400C57DAA /* ADMChatBaseModel.m */; };
+		8B7925CA26CB449400C57DAA /* ADMInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79257A26CB449400C57DAA /* ADMInputView.m */; };
+		8B7925CB26CB449400C57DAA /* ADMInputBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79257D26CB449400C57DAA /* ADMInputBtn.m */; };
+		8B7925CC26CB449400C57DAA /* ADMRecordAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79258026CB449400C57DAA /* ADMRecordAnimation.m */; };
+		8B7925CD26CB449400C57DAA /* ADMToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79258126CB449400C57DAA /* ADMToolView.m */; };
+		8B7925CE26CB449400C57DAA /* ADMEmoticonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79258826CB449400C57DAA /* ADMEmoticonManager.m */; };
+		8B7925CF26CB449400C57DAA /* ADMHorizontalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79258D26CB449400C57DAA /* ADMHorizontalLayout.m */; };
+		8B7925D026CB449400C57DAA /* ADMEmoticonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79259226CB449400C57DAA /* ADMEmoticonCell.m */; };
+		8B7925D126CB449400C57DAA /* ADMBlankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79259326CB449400C57DAA /* ADMBlankCell.m */; };
+		8B7925D226CB449400C57DAA /* ADMDeleteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79259526CB449400C57DAA /* ADMDeleteCell.m */; };
+		8B7925D326CB449400C57DAA /* ADMEmojisCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79259626CB449400C57DAA /* ADMEmojisCell.m */; };
+		8B7925D426CB449400C57DAA /* ADMEmojisKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79259726CB449400C57DAA /* ADMEmojisKeyboard.m */; };
+		8B7925D526CB449400C57DAA /* ADMMoreKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79259A26CB449400C57DAA /* ADMMoreKeyboard.m */; };
+		8B7925D626CB449400C57DAA /* ADMEmoticon2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B79259D26CB449400C57DAA /* ADMEmoticon2.plist */; };
+		8B7925D726CB449400C57DAA /* ADMEmoticon1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B79259E26CB449400C57DAA /* ADMEmoticon1.plist */; };
+		8B7925D826CB449400C57DAA /* ADMEmojis.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B79259F26CB449400C57DAA /* ADMEmojis.plist */; };
+		8B7925D926CB449400C57DAA /* ADMEmoticon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8B7925A026CB449400C57DAA /* ADMEmoticon.bundle */; };
+		8B7925DA26CB449400C57DAA /* ADMInputHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7925A226CB449400C57DAA /* ADMInputHelper.m */; };
+		8B7925DB26CB449400C57DAA /* ADMInputBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7925A326CB449400C57DAA /* ADMInputBase64.m */; };
+		8B7925DC26CB449400C57DAA /* ADMBaseInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7925A926CB449400C57DAA /* ADMBaseInputView.m */; };
+		8B7925DD26CB449400C57DAA /* ADMChatBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7925AB26CB449400C57DAA /* ADMChatBtn.m */; };
+		8B7925DE26CB449400C57DAA /* ADMChatVideoMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7925B026CB449400C57DAA /* ADMChatVideoMessageCell.m */; };
+		8B7925DF26CB449400C57DAA /* ADMChatImageMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7925B326CB449400C57DAA /* ADMChatImageMessageCell.m */; };
+		8B7925E026CB449400C57DAA /* ADMChatBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7925B526CB449400C57DAA /* ADMChatBaseCell.m */; };
+		8B7925E126CB449400C57DAA /* ADMChatTextMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7925B726CB449400C57DAA /* ADMChatTextMessageCell.m */; };
+		8B7925E226CB449400C57DAA /* ADMChatMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7925B826CB449400C57DAA /* ADMChatMessageCell.m */; };
+		8B7925E326CB449400C57DAA /* ADMChatVoiceMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7925BA26CB449400C57DAA /* ADMChatVoiceMessageCell.m */; };
+		8B7925E426CB449400C57DAA /* ADMChatSystemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7925BB26CB449400C57DAA /* ADMChatSystemCell.m */; };
+		8B7925EC26CB450400C57DAA /* ADMSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7925E726CB450400C57DAA /* ADMSessionViewController.m */; };
+		8B7925ED26CB450400C57DAA /* ADMSessionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7925EB26CB450400C57DAA /* ADMSessionTableViewCell.m */; };
+		8B7925F526CB450E00C57DAA /* ADMUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7925F026CB450E00C57DAA /* ADMUserViewController.m */; };
+		8B7925F626CB450E00C57DAA /* ADMUserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7925F426CB450E00C57DAA /* ADMUserTableViewCell.m */; };
+		8B96E3BB26CA5F980022A9BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B96E3BA26CA5F980022A9BC /* AppDelegate.m */; };
+		8B96E3C126CA5F980022A9BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B96E3C026CA5F980022A9BC /* ViewController.m */; };
+		8B96E3C426CA5F980022A9BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B96E3C226CA5F980022A9BC /* Main.storyboard */; };
+		8B96E3C626CA5F9A0022A9BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B96E3C526CA5F9A0022A9BC /* Assets.xcassets */; };
+		8B96E3C926CA5F9A0022A9BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B96E3C726CA5F9A0022A9BC /* LaunchScreen.storyboard */; };
+		8B96E3CC26CA5F9A0022A9BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B96E3CB26CA5F9A0022A9BC /* main.m */; };
+		8B96E42D26CA69870022A9BC /* expression.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B96E42C26CA69870022A9BC /* expression.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1246041C801E1A1FFB769F15 /* Pods-ADMChatUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADMChatUI.debug.xcconfig"; path = "Target Support Files/Pods-ADMChatUI/Pods-ADMChatUI.debug.xcconfig"; sourceTree = "<group>"; };
+		7E74E3C1763E805BC0B8857E /* Pods_ADMChatUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADMChatUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B79255526CB449400C57DAA /* UIView+ADMChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ADMChat.h"; sourceTree = "<group>"; };
+		8B79255626CB449400C57DAA /* NSDateFormatter+ADMChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+ADMChat.m"; sourceTree = "<group>"; };
+		8B79255726CB449400C57DAA /* NSDateFormatter+ADMChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+ADMChat.h"; sourceTree = "<group>"; };
+		8B79255826CB449400C57DAA /* UIView+ADMChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ADMChat.m"; sourceTree = "<group>"; };
+		8B79255A26CB449400C57DAA /* ADMChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatViewController.h; sourceTree = "<group>"; };
+		8B79255B26CB449400C57DAA /* ADMChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatViewController.m; sourceTree = "<group>"; };
+		8B79255D26CB449400C57DAA /* ADMChatDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatDBManager.h; sourceTree = "<group>"; };
+		8B79255E26CB449400C57DAA /* ADMChatNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatNotificationManager.h; sourceTree = "<group>"; };
+		8B79255F26CB449400C57DAA /* ADMChatMessageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatMessageManager.h; sourceTree = "<group>"; };
+		8B79256026CB449400C57DAA /* ADMChatHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatHelper.h; sourceTree = "<group>"; };
+		8B79256126CB449400C57DAA /* ADMChatSqliteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatSqliteManager.m; sourceTree = "<group>"; };
+		8B79256226CB449400C57DAA /* ADMChatHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatHelper.m; sourceTree = "<group>"; };
+		8B79256326CB449400C57DAA /* ADMChatMessageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatMessageManager.m; sourceTree = "<group>"; };
+		8B79256426CB449400C57DAA /* WZChatMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZChatMacro.h; sourceTree = "<group>"; };
+		8B79256526CB449400C57DAA /* ADMChatNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatNotificationManager.m; sourceTree = "<group>"; };
+		8B79256626CB449400C57DAA /* ADMChatDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatDBManager.m; sourceTree = "<group>"; };
+		8B79256726CB449400C57DAA /* ADMChatSqliteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatSqliteManager.h; sourceTree = "<group>"; };
+		8B79256A26CB449400C57DAA /* ADMChatMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatMessageModel.m; sourceTree = "<group>"; };
+		8B79256B26CB449400C57DAA /* ADMChatMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatMessageModel.h; sourceTree = "<group>"; };
+		8B79256D26CB449400C57DAA /* ADMChatGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatGroupModel.m; sourceTree = "<group>"; };
+		8B79256E26CB449400C57DAA /* ADMChatUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatUserModel.m; sourceTree = "<group>"; };
+		8B79256F26CB449400C57DAA /* ADMChatSessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatSessionModel.m; sourceTree = "<group>"; };
+		8B79257026CB449400C57DAA /* ADMChatUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatUserModel.h; sourceTree = "<group>"; };
+		8B79257126CB449400C57DAA /* ADMChatGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatGroupModel.h; sourceTree = "<group>"; };
+		8B79257226CB449400C57DAA /* ADMChatSessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatSessionModel.h; sourceTree = "<group>"; };
+		8B79257426CB449400C57DAA /* ADMChatBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatBaseModel.m; sourceTree = "<group>"; };
+		8B79257526CB449400C57DAA /* ADMChatBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatBaseModel.h; sourceTree = "<group>"; };
+		8B79257626CB449400C57DAA /* ADMChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChat.h; sourceTree = "<group>"; };
+		8B79257A26CB449400C57DAA /* ADMInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMInputView.m; sourceTree = "<group>"; };
+		8B79257D26CB449400C57DAA /* ADMInputBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMInputBtn.m; sourceTree = "<group>"; };
+		8B79257E26CB449400C57DAA /* ADMInputBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMInputBtn.h; sourceTree = "<group>"; };
+		8B79258026CB449400C57DAA /* ADMRecordAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMRecordAnimation.m; sourceTree = "<group>"; };
+		8B79258126CB449400C57DAA /* ADMToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMToolView.m; sourceTree = "<group>"; };
+		8B79258226CB449400C57DAA /* ADMRecordAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMRecordAnimation.h; sourceTree = "<group>"; };
+		8B79258326CB449400C57DAA /* ADMToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMToolView.h; sourceTree = "<group>"; };
+		8B79258626CB449400C57DAA /* ADMEmojisKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMEmojisKeyboard.h; sourceTree = "<group>"; };
+		8B79258826CB449400C57DAA /* ADMEmoticonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMEmoticonManager.m; sourceTree = "<group>"; };
+		8B79258926CB449400C57DAA /* ADMEmoticonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMEmoticonManager.h; sourceTree = "<group>"; };
+		8B79258C26CB449400C57DAA /* ADMHorizontalLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMHorizontalLayout.h; sourceTree = "<group>"; };
+		8B79258D26CB449400C57DAA /* ADMHorizontalLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMHorizontalLayout.m; sourceTree = "<group>"; };
+		8B79258F26CB449400C57DAA /* ADMBlankCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMBlankCell.h; sourceTree = "<group>"; };
+		8B79259026CB449400C57DAA /* ADMEmojisCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMEmojisCell.h; sourceTree = "<group>"; };
+		8B79259126CB449400C57DAA /* ADMDeleteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMDeleteCell.h; sourceTree = "<group>"; };
+		8B79259226CB449400C57DAA /* ADMEmoticonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMEmoticonCell.m; sourceTree = "<group>"; };
+		8B79259326CB449400C57DAA /* ADMBlankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMBlankCell.m; sourceTree = "<group>"; };
+		8B79259426CB449400C57DAA /* ADMEmoticonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMEmoticonCell.h; sourceTree = "<group>"; };
+		8B79259526CB449400C57DAA /* ADMDeleteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMDeleteCell.m; sourceTree = "<group>"; };
+		8B79259626CB449400C57DAA /* ADMEmojisCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMEmojisCell.m; sourceTree = "<group>"; };
+		8B79259726CB449400C57DAA /* ADMEmojisKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMEmojisKeyboard.m; sourceTree = "<group>"; };
+		8B79259926CB449400C57DAA /* ADMMoreKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMMoreKeyboard.h; sourceTree = "<group>"; };
+		8B79259A26CB449400C57DAA /* ADMMoreKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMMoreKeyboard.m; sourceTree = "<group>"; };
+		8B79259B26CB449400C57DAA /* ADMInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMInputView.h; sourceTree = "<group>"; };
+		8B79259D26CB449400C57DAA /* ADMEmoticon2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ADMEmoticon2.plist; sourceTree = "<group>"; };
+		8B79259E26CB449400C57DAA /* ADMEmoticon1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ADMEmoticon1.plist; sourceTree = "<group>"; };
+		8B79259F26CB449400C57DAA /* ADMEmojis.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ADMEmojis.plist; sourceTree = "<group>"; };
+		8B7925A026CB449400C57DAA /* ADMEmoticon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ADMEmoticon.bundle; sourceTree = "<group>"; };
+		8B7925A226CB449400C57DAA /* ADMInputHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMInputHelper.m; sourceTree = "<group>"; };
+		8B7925A326CB449400C57DAA /* ADMInputBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMInputBase64.m; sourceTree = "<group>"; };
+		8B7925A426CB449400C57DAA /* WZNInputEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZNInputEnum.h; sourceTree = "<group>"; };
+		8B7925A526CB449400C57DAA /* ADMInputHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMInputHelper.h; sourceTree = "<group>"; };
+		8B7925A626CB449400C57DAA /* ADMInputBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMInputBase64.h; sourceTree = "<group>"; };
+		8B7925A826CB449400C57DAA /* ADMBaseInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMBaseInputView.h; sourceTree = "<group>"; };
+		8B7925A926CB449400C57DAA /* ADMBaseInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMBaseInputView.m; sourceTree = "<group>"; };
+		8B7925AB26CB449400C57DAA /* ADMChatBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatBtn.m; sourceTree = "<group>"; };
+		8B7925AC26CB449400C57DAA /* ADMChatBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatBtn.h; sourceTree = "<group>"; };
+		8B7925AE26CB449400C57DAA /* ADMChatTextMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatTextMessageCell.h; sourceTree = "<group>"; };
+		8B7925AF26CB449400C57DAA /* ADMChatVoiceMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatVoiceMessageCell.h; sourceTree = "<group>"; };
+		8B7925B026CB449400C57DAA /* ADMChatVideoMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatVideoMessageCell.m; sourceTree = "<group>"; };
+		8B7925B126CB449400C57DAA /* ADMChatMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatMessageCell.h; sourceTree = "<group>"; };
+		8B7925B226CB449400C57DAA /* ADMChatSystemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatSystemCell.h; sourceTree = "<group>"; };
+		8B7925B326CB449400C57DAA /* ADMChatImageMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatImageMessageCell.m; sourceTree = "<group>"; };
+		8B7925B526CB449400C57DAA /* ADMChatBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatBaseCell.m; sourceTree = "<group>"; };
+		8B7925B626CB449400C57DAA /* ADMChatBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatBaseCell.h; sourceTree = "<group>"; };
+		8B7925B726CB449400C57DAA /* ADMChatTextMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatTextMessageCell.m; sourceTree = "<group>"; };
+		8B7925B826CB449400C57DAA /* ADMChatMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatMessageCell.m; sourceTree = "<group>"; };
+		8B7925B926CB449400C57DAA /* ADMChatVideoMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatVideoMessageCell.h; sourceTree = "<group>"; };
+		8B7925BA26CB449400C57DAA /* ADMChatVoiceMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatVoiceMessageCell.m; sourceTree = "<group>"; };
+		8B7925BB26CB449400C57DAA /* ADMChatSystemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMChatSystemCell.m; sourceTree = "<group>"; };
+		8B7925BC26CB449400C57DAA /* ADMChatImageMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMChatImageMessageCell.h; sourceTree = "<group>"; };
+		8B7925E726CB450400C57DAA /* ADMSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMSessionViewController.m; sourceTree = "<group>"; };
+		8B7925E826CB450400C57DAA /* ADMSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMSessionViewController.h; sourceTree = "<group>"; };
+		8B7925EA26CB450400C57DAA /* ADMSessionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMSessionTableViewCell.h; sourceTree = "<group>"; };
+		8B7925EB26CB450400C57DAA /* ADMSessionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMSessionTableViewCell.m; sourceTree = "<group>"; };
+		8B7925F026CB450E00C57DAA /* ADMUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMUserViewController.m; sourceTree = "<group>"; };
+		8B7925F126CB450E00C57DAA /* ADMUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMUserViewController.h; sourceTree = "<group>"; };
+		8B7925F326CB450E00C57DAA /* ADMUserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMUserTableViewCell.h; sourceTree = "<group>"; };
+		8B7925F426CB450E00C57DAA /* ADMUserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMUserTableViewCell.m; sourceTree = "<group>"; };
+		8B96E3B626CA5F980022A9BC /* ADMChatUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADMChatUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B96E3B926CA5F980022A9BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8B96E3BA26CA5F980022A9BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8B96E3BF26CA5F980022A9BC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8B96E3C026CA5F980022A9BC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8B96E3C326CA5F980022A9BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B96E3C526CA5F9A0022A9BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B96E3C826CA5F9A0022A9BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B96E3CA26CA5F9A0022A9BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B96E3CB26CA5F9A0022A9BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B96E42C26CA69870022A9BC /* expression.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = expression.plist; sourceTree = "<group>"; };
+		9D8470D09617DAEEC48DD17E /* Pods-ADMChatUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADMChatUI.release.xcconfig"; path = "Target Support Files/Pods-ADMChatUI/Pods-ADMChatUI.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B96E3B326CA5F980022A9BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E5BFAA7D8CFCE2A60324623 /* Pods_ADMChatUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B79255326CB449400C57DAA /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				8B79257626CB449400C57DAA /* ADMChat.h */,
+				8B79255426CB449400C57DAA /* Category */,
+				8B79255926CB449400C57DAA /* Controller */,
+				8B79255C26CB449400C57DAA /* Common */,
+				8B79256826CB449400C57DAA /* Model */,
+				8B79257726CB449400C57DAA /* View */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		8B79255426CB449400C57DAA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8B79255726CB449400C57DAA /* NSDateFormatter+ADMChat.h */,
+				8B79255626CB449400C57DAA /* NSDateFormatter+ADMChat.m */,
+				8B79255526CB449400C57DAA /* UIView+ADMChat.h */,
+				8B79255826CB449400C57DAA /* UIView+ADMChat.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8B79255926CB449400C57DAA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B79255A26CB449400C57DAA /* ADMChatViewController.h */,
+				8B79255B26CB449400C57DAA /* ADMChatViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B79255C26CB449400C57DAA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8B79256426CB449400C57DAA /* WZChatMacro.h */,
+				8B79255D26CB449400C57DAA /* ADMChatDBManager.h */,
+				8B79256626CB449400C57DAA /* ADMChatDBManager.m */,
+				8B79256026CB449400C57DAA /* ADMChatHelper.h */,
+				8B79256226CB449400C57DAA /* ADMChatHelper.m */,
+				8B79255F26CB449400C57DAA /* ADMChatMessageManager.h */,
+				8B79256326CB449400C57DAA /* ADMChatMessageManager.m */,
+				8B79255E26CB449400C57DAA /* ADMChatNotificationManager.h */,
+				8B79256526CB449400C57DAA /* ADMChatNotificationManager.m */,
+				8B79256726CB449400C57DAA /* ADMChatSqliteManager.h */,
+				8B79256126CB449400C57DAA /* ADMChatSqliteManager.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8B79256826CB449400C57DAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B79257326CB449400C57DAA /* ADMChatBaseModel */,
+				8B79256926CB449400C57DAA /* ADMChatMessageModel */,
+				8B79256C26CB449400C57DAA /* ADMChatUserModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B79256926CB449400C57DAA /* ADMChatMessageModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B79256B26CB449400C57DAA /* ADMChatMessageModel.h */,
+				8B79256A26CB449400C57DAA /* ADMChatMessageModel.m */,
+			);
+			path = ADMChatMessageModel;
+			sourceTree = "<group>";
+		};
+		8B79256C26CB449400C57DAA /* ADMChatUserModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B79257126CB449400C57DAA /* ADMChatGroupModel.h */,
+				8B79256D26CB449400C57DAA /* ADMChatGroupModel.m */,
+				8B79257226CB449400C57DAA /* ADMChatSessionModel.h */,
+				8B79256F26CB449400C57DAA /* ADMChatSessionModel.m */,
+				8B79257026CB449400C57DAA /* ADMChatUserModel.h */,
+				8B79256E26CB449400C57DAA /* ADMChatUserModel.m */,
+			);
+			path = ADMChatUserModel;
+			sourceTree = "<group>";
+		};
+		8B79257326CB449400C57DAA /* ADMChatBaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B79257526CB449400C57DAA /* ADMChatBaseModel.h */,
+				8B79257426CB449400C57DAA /* ADMChatBaseModel.m */,
+			);
+			path = ADMChatBaseModel;
+			sourceTree = "<group>";
+		};
+		8B79257726CB449400C57DAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B7925AA26CB449400C57DAA /* Btn */,
+				8B79257826CB449400C57DAA /* InputView */,
+				8B7925AD26CB449400C57DAA /* MsgCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B79257826CB449400C57DAA /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				8B7925A726CB449400C57DAA /* BaseInputView */,
+				8B79257926CB449400C57DAA /* InputView */,
+			);
+			path = InputView;
+			sourceTree = "<group>";
+		};
+		8B79257926CB449400C57DAA /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				8B7925A126CB449400C57DAA /* Helper */,
+				8B79259C26CB449400C57DAA /* Resource */,
+				8B79257B26CB449400C57DAA /* View */,
+				8B79259B26CB449400C57DAA /* ADMInputView.h */,
+				8B79257A26CB449400C57DAA /* ADMInputView.m */,
+			);
+			path = InputView;
+			sourceTree = "<group>";
+		};
+		8B79257B26CB449400C57DAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B79257C26CB449400C57DAA /* Btn */,
+				8B79257F26CB449400C57DAA /* ToolView */,
+				8B79258426CB449400C57DAA /* Keyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B79257C26CB449400C57DAA /* Btn */ = {
+			isa = PBXGroup;
+			children = (
+				8B79257D26CB449400C57DAA /* ADMInputBtn.m */,
+				8B79257E26CB449400C57DAA /* ADMInputBtn.h */,
+			);
+			path = Btn;
+			sourceTree = "<group>";
+		};
+		8B79257F26CB449400C57DAA /* ToolView */ = {
+			isa = PBXGroup;
+			children = (
+				8B79258226CB449400C57DAA /* ADMRecordAnimation.h */,
+				8B79258026CB449400C57DAA /* ADMRecordAnimation.m */,
+				8B79258326CB449400C57DAA /* ADMToolView.h */,
+				8B79258126CB449400C57DAA /* ADMToolView.m */,
+			);
+			path = ToolView;
+			sourceTree = "<group>";
+		};
+		8B79258426CB449400C57DAA /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8B79258526CB449400C57DAA /* EmojisKeyboard */,
+				8B79259826CB449400C57DAA /* MoreKeyboard */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		8B79258526CB449400C57DAA /* EmojisKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8B79258726CB449400C57DAA /* EmoticonManager */,
+				8B79258A26CB449400C57DAA /* View */,
+				8B79258626CB449400C57DAA /* ADMEmojisKeyboard.h */,
+				8B79259726CB449400C57DAA /* ADMEmojisKeyboard.m */,
+			);
+			path = EmojisKeyboard;
+			sourceTree = "<group>";
+		};
+		8B79258726CB449400C57DAA /* EmoticonManager */ = {
+			isa = PBXGroup;
+			children = (
+				8B79258926CB449400C57DAA /* ADMEmoticonManager.h */,
+				8B79258826CB449400C57DAA /* ADMEmoticonManager.m */,
+			);
+			path = EmoticonManager;
+			sourceTree = "<group>";
+		};
+		8B79258A26CB449400C57DAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B79258B26CB449400C57DAA /* Layout */,
+				8B79258E26CB449400C57DAA /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B79258B26CB449400C57DAA /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				8B79258C26CB449400C57DAA /* ADMHorizontalLayout.h */,
+				8B79258D26CB449400C57DAA /* ADMHorizontalLayout.m */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		8B79258E26CB449400C57DAA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8B79258F26CB449400C57DAA /* ADMBlankCell.h */,
+				8B79259326CB449400C57DAA /* ADMBlankCell.m */,
+				8B79259126CB449400C57DAA /* ADMDeleteCell.h */,
+				8B79259526CB449400C57DAA /* ADMDeleteCell.m */,
+				8B79259026CB449400C57DAA /* ADMEmojisCell.h */,
+				8B79259626CB449400C57DAA /* ADMEmojisCell.m */,
+				8B79259426CB449400C57DAA /* ADMEmoticonCell.h */,
+				8B79259226CB449400C57DAA /* ADMEmoticonCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8B79259826CB449400C57DAA /* MoreKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8B79259926CB449400C57DAA /* ADMMoreKeyboard.h */,
+				8B79259A26CB449400C57DAA /* ADMMoreKeyboard.m */,
+			);
+			path = MoreKeyboard;
+			sourceTree = "<group>";
+		};
+		8B79259C26CB449400C57DAA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8B79259F26CB449400C57DAA /* ADMEmojis.plist */,
+				8B7925A026CB449400C57DAA /* ADMEmoticon.bundle */,
+				8B79259E26CB449400C57DAA /* ADMEmoticon1.plist */,
+				8B79259D26CB449400C57DAA /* ADMEmoticon2.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8B7925A126CB449400C57DAA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8B7925A626CB449400C57DAA /* ADMInputBase64.h */,
+				8B7925A326CB449400C57DAA /* ADMInputBase64.m */,
+				8B7925A526CB449400C57DAA /* ADMInputHelper.h */,
+				8B7925A226CB449400C57DAA /* ADMInputHelper.m */,
+				8B7925A426CB449400C57DAA /* WZNInputEnum.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8B7925A726CB449400C57DAA /* BaseInputView */ = {
+			isa = PBXGroup;
+			children = (
+				8B7925A826CB449400C57DAA /* ADMBaseInputView.h */,
+				8B7925A926CB449400C57DAA /* ADMBaseInputView.m */,
+			);
+			path = BaseInputView;
+			sourceTree = "<group>";
+		};
+		8B7925AA26CB449400C57DAA /* Btn */ = {
+			isa = PBXGroup;
+			children = (
+				8B7925AC26CB449400C57DAA /* ADMChatBtn.h */,
+				8B7925AB26CB449400C57DAA /* ADMChatBtn.m */,
+			);
+			path = Btn;
+			sourceTree = "<group>";
+		};
+		8B7925AD26CB449400C57DAA /* MsgCell */ = {
+			isa = PBXGroup;
+			children = (
+				8B7925B426CB449400C57DAA /* BaseCell */,
+				8B7925BC26CB449400C57DAA /* ADMChatImageMessageCell.h */,
+				8B7925B326CB449400C57DAA /* ADMChatImageMessageCell.m */,
+				8B7925B126CB449400C57DAA /* ADMChatMessageCell.h */,
+				8B7925B826CB449400C57DAA /* ADMChatMessageCell.m */,
+				8B7925B226CB449400C57DAA /* ADMChatSystemCell.h */,
+				8B7925BB26CB449400C57DAA /* ADMChatSystemCell.m */,
+				8B7925AE26CB449400C57DAA /* ADMChatTextMessageCell.h */,
+				8B7925B726CB449400C57DAA /* ADMChatTextMessageCell.m */,
+				8B7925B926CB449400C57DAA /* ADMChatVideoMessageCell.h */,
+				8B7925B026CB449400C57DAA /* ADMChatVideoMessageCell.m */,
+				8B7925AF26CB449400C57DAA /* ADMChatVoiceMessageCell.h */,
+				8B7925BA26CB449400C57DAA /* ADMChatVoiceMessageCell.m */,
+			);
+			path = MsgCell;
+			sourceTree = "<group>";
+		};
+		8B7925B426CB449400C57DAA /* BaseCell */ = {
+			isa = PBXGroup;
+			children = (
+				8B7925B626CB449400C57DAA /* ADMChatBaseCell.h */,
+				8B7925B526CB449400C57DAA /* ADMChatBaseCell.m */,
+			);
+			path = BaseCell;
+			sourceTree = "<group>";
+		};
+		8B7925E526CB450400C57DAA /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				8B7925E626CB450400C57DAA /* Controller */,
+				8B7925E926CB450400C57DAA /* View */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		8B7925E626CB450400C57DAA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B7925E726CB450400C57DAA /* ADMSessionViewController.m */,
+				8B7925E826CB450400C57DAA /* ADMSessionViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B7925E926CB450400C57DAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B7925EA26CB450400C57DAA /* ADMSessionTableViewCell.h */,
+				8B7925EB26CB450400C57DAA /* ADMSessionTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B7925EE26CB450E00C57DAA /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				8B7925EF26CB450E00C57DAA /* Controller */,
+				8B7925F226CB450E00C57DAA /* View */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
+		8B7925EF26CB450E00C57DAA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B7925F026CB450E00C57DAA /* ADMUserViewController.m */,
+				8B7925F126CB450E00C57DAA /* ADMUserViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B7925F226CB450E00C57DAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B7925F326CB450E00C57DAA /* ADMUserTableViewCell.h */,
+				8B7925F426CB450E00C57DAA /* ADMUserTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B96E3AD26CA5F980022A9BC = {
+			isa = PBXGroup;
+			children = (
+				8B96E3B826CA5F980022A9BC /* ADMChatUI */,
+				8B96E3B726CA5F980022A9BC /* Products */,
+				A2579B73138F2249CC810318 /* Pods */,
+				AA886C0B81C7C82D2AD8CF10 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8B96E3B726CA5F980022A9BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B96E3B626CA5F980022A9BC /* ADMChatUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B96E3B826CA5F980022A9BC /* ADMChatUI */ = {
+			isa = PBXGroup;
+			children = (
+				8B79255326CB449400C57DAA /* Chat */,
+				8B96E3B926CA5F980022A9BC /* AppDelegate.h */,
+				8B96E3BA26CA5F980022A9BC /* AppDelegate.m */,
+				8B96E3BF26CA5F980022A9BC /* ViewController.h */,
+				8B96E3C026CA5F980022A9BC /* ViewController.m */,
+				8B7925EE26CB450E00C57DAA /* Friend */,
+				8B7925E526CB450400C57DAA /* Session */,
+				8B96E3C226CA5F980022A9BC /* Main.storyboard */,
+				8B96E3C526CA5F9A0022A9BC /* Assets.xcassets */,
+				8B96E3C726CA5F9A0022A9BC /* LaunchScreen.storyboard */,
+				8B96E3CA26CA5F9A0022A9BC /* Info.plist */,
+				8B96E42C26CA69870022A9BC /* expression.plist */,
+				8B96E3CB26CA5F9A0022A9BC /* main.m */,
+			);
+			path = ADMChatUI;
+			sourceTree = "<group>";
+		};
+		A2579B73138F2249CC810318 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1246041C801E1A1FFB769F15 /* Pods-ADMChatUI.debug.xcconfig */,
+				9D8470D09617DAEEC48DD17E /* Pods-ADMChatUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA886C0B81C7C82D2AD8CF10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E74E3C1763E805BC0B8857E /* Pods_ADMChatUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B96E3B526CA5F980022A9BC /* ADMChatUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B96E3CF26CA5F9A0022A9BC /* Build configuration list for PBXNativeTarget "ADMChatUI" */;
+			buildPhases = (
+				5176DFD760765A069C224260 /* [CP] Check Pods Manifest.lock */,
+				8B96E3B226CA5F980022A9BC /* Sources */,
+				8B96E3B326CA5F980022A9BC /* Frameworks */,
+				8B96E3B426CA5F980022A9BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ADMChatUI;
+			productName = ADMChatUI;
+			productReference = 8B96E3B626CA5F980022A9BC /* ADMChatUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B96E3AE26CA5F980022A9BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					8B96E3B526CA5F980022A9BC = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 8B96E3B126CA5F980022A9BC /* Build configuration list for PBXProject "ADMChatUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B96E3AD26CA5F980022A9BC;
+			productRefGroup = 8B96E3B726CA5F980022A9BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B96E3B526CA5F980022A9BC /* ADMChatUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B96E3B426CA5F980022A9BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B96E42D26CA69870022A9BC /* expression.plist in Resources */,
+				8B7925D726CB449400C57DAA /* ADMEmoticon1.plist in Resources */,
+				8B96E3C926CA5F9A0022A9BC /* LaunchScreen.storyboard in Resources */,
+				8B7925D826CB449400C57DAA /* ADMEmojis.plist in Resources */,
+				8B7925D626CB449400C57DAA /* ADMEmoticon2.plist in Resources */,
+				8B96E3C626CA5F9A0022A9BC /* Assets.xcassets in Resources */,
+				8B7925D926CB449400C57DAA /* ADMEmoticon.bundle in Resources */,
+				8B96E3C426CA5F980022A9BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5176DFD760765A069C224260 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ADMChatUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B96E3B226CA5F980022A9BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B7925D326CB449400C57DAA /* ADMEmojisCell.m in Sources */,
+				8B7925E426CB449400C57DAA /* ADMChatSystemCell.m in Sources */,
+				8B7925E326CB449400C57DAA /* ADMChatVoiceMessageCell.m in Sources */,
+				8B7925DA26CB449400C57DAA /* ADMInputHelper.m in Sources */,
+				8B7925D026CB449400C57DAA /* ADMEmoticonCell.m in Sources */,
+				8B7925C426CB449400C57DAA /* ADMChatDBManager.m in Sources */,
+				8B7925C226CB449400C57DAA /* ADMChatMessageManager.m in Sources */,
+				8B7925E026CB449400C57DAA /* ADMChatBaseCell.m in Sources */,
+				8B96E3C126CA5F980022A9BC /* ViewController.m in Sources */,
+				8B7925C826CB449400C57DAA /* ADMChatSessionModel.m in Sources */,
+				8B7925CE26CB449400C57DAA /* ADMEmoticonManager.m in Sources */,
+				8B7925ED26CB450400C57DAA /* ADMSessionTableViewCell.m in Sources */,
+				8B7925CF26CB449400C57DAA /* ADMHorizontalLayout.m in Sources */,
+				8B7925F626CB450E00C57DAA /* ADMUserTableViewCell.m in Sources */,
+				8B7925DF26CB449400C57DAA /* ADMChatImageMessageCell.m in Sources */,
+				8B7925D126CB449400C57DAA /* ADMBlankCell.m in Sources */,
+				8B7925DE26CB449400C57DAA /* ADMChatVideoMessageCell.m in Sources */,
+				8B7925CC26CB449400C57DAA /* ADMRecordAnimation.m in Sources */,
+				8B7925D226CB449400C57DAA /* ADMDeleteCell.m in Sources */,
+				8B7925C726CB449400C57DAA /* ADMChatUserModel.m in Sources */,
+				8B7925CB26CB449400C57DAA /* ADMInputBtn.m in Sources */,
+				8B7925D526CB449400C57DAA /* ADMMoreKeyboard.m in Sources */,
+				8B7925BE26CB449400C57DAA /* UIView+ADMChat.m in Sources */,
+				8B96E3BB26CA5F980022A9BC /* AppDelegate.m in Sources */,
+				8B7925F526CB450E00C57DAA /* ADMUserViewController.m in Sources */,
+				8B7925DC26CB449400C57DAA /* ADMBaseInputView.m in Sources */,
+				8B7925C926CB449400C57DAA /* ADMChatBaseModel.m in Sources */,
+				8B7925D426CB449400C57DAA /* ADMEmojisKeyboard.m in Sources */,
+				8B7925C126CB449400C57DAA /* ADMChatHelper.m in Sources */,
+				8B7925C626CB449400C57DAA /* ADMChatGroupModel.m in Sources */,
+				8B7925C326CB449400C57DAA /* ADMChatNotificationManager.m in Sources */,
+				8B7925DD26CB449400C57DAA /* ADMChatBtn.m in Sources */,
+				8B96E3CC26CA5F9A0022A9BC /* main.m in Sources */,
+				8B7925C526CB449400C57DAA /* ADMChatMessageModel.m in Sources */,
+				8B7925DB26CB449400C57DAA /* ADMInputBase64.m in Sources */,
+				8B7925C026CB449400C57DAA /* ADMChatSqliteManager.m in Sources */,
+				8B7925BD26CB449400C57DAA /* NSDateFormatter+ADMChat.m in Sources */,
+				8B7925E226CB449400C57DAA /* ADMChatMessageCell.m in Sources */,
+				8B7925CD26CB449400C57DAA /* ADMToolView.m in Sources */,
+				8B7925EC26CB450400C57DAA /* ADMSessionViewController.m in Sources */,
+				8B7925CA26CB449400C57DAA /* ADMInputView.m in Sources */,
+				8B7925E126CB449400C57DAA /* ADMChatTextMessageCell.m in Sources */,
+				8B7925BF26CB449400C57DAA /* ADMChatViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8B96E3C226CA5F980022A9BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B96E3C326CA5F980022A9BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B96E3C726CA5F9A0022A9BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B96E3C826CA5F9A0022A9BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B96E3CD26CA5F9A0022A9BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8B96E3CE26CA5F9A0022A9BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B96E3D026CA5F9A0022A9BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1246041C801E1A1FFB769F15 /* Pods-ADMChatUI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PH468GZFR6;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = ADMChatUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ADMall.ADMChat123;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8B96E3D126CA5F9A0022A9BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D8470D09617DAEEC48DD17E /* Pods-ADMChatUI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PH468GZFR6;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = ADMChatUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ADMall.ADMChat123;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B96E3B126CA5F980022A9BC /* Build configuration list for PBXProject "ADMChatUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B96E3CD26CA5F9A0022A9BC /* Debug */,
+				8B96E3CE26CA5F9A0022A9BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B96E3CF26CA5F9A0022A9BC /* Build configuration list for PBXNativeTarget "ADMChatUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B96E3D026CA5F9A0022A9BC /* Debug */,
+				8B96E3D126CA5F9A0022A9BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B96E3AE26CA5F980022A9BC /* Project object */;
+}
